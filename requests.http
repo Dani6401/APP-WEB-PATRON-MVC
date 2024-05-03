@@ -1,0 +1,30 @@
+### Ingresar usuarios
+POST http://localhost:7000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre" : "Samuel",
+    "apellido" : "De Luque",
+    "edad" : "38",
+    "email" : "SDL@example.com"
+}
+
+### Obtener todos los usuarios 
+GET http://localhost:7000/api/users HTTP/1.1
+
+### Obtener un usuario 
+GET http://localhost:7000/api/users/6635431d972cc579cc13c6e2 HTTP/1.1
+
+### Actualizar un usuario 
+PUT http://localhost:7000/api/users/6635431d972cc579cc13c6e2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre" : "Samuel",
+    "apellido" : "Luque",
+    "edad" : "38",
+    "email" : "SDL@example.com"
+}
+
+### Eliminar un usuario 
+DELETE http://localhost:7000/api/users/6635431d972cc579cc13c6e2 HTTP/1.1
