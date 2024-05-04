@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-API-CRUD</title>
+</head>
+<body>
+    
+    <h1>Operaciones CRUD</h1>
+
+    <!-- Formularios para agregar usuarios -->
+    <div>
+        <form action="agregar" id="add-form">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="number" name="edad" placeholder="Edad">
+            <input type="email" name="email" placeholder="Email">
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+    <!-- Formulario para eliminar usuarios -->
+    <div>
+        <form action="eliminar" id="delete-form">
+            <input type="text" name="userId" placeholder="ID del usuario a eliminar">
+            <button type="submit">Eliminar</button>
+        </form>
+    </div>
+    <!-- Formulario para actualizar usuarios -->
+    <div>
+        <form action="actualizar" id="update-form">
+            <input type="text" name="userId" placeholder="ID del usuario a actualizar">
+            <input type="text" name="nombre" placeholder="Nuevo nombre">
+            <input type="text" name="apellido" placeholder="Nuevo apellido">
+            <input type="number" name="edad" placeholder="Nueva edad">
+            <input type="email" name="email" placeholder="Nuevo email">
+            <button type="submit">Actualizar</button>
+        </form>
+    </div>
+
+    <!-- Botón para mostrar todos los usuarios -->
+    <div>
+        <button id="show-button">Mostrar Todos los Usuarios</button>
+        <ul id="user-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
